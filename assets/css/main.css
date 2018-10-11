@@ -1492,7 +1492,7 @@
 
 
 	#profilePic{
-		opacity: 0.8;
+		opacity: 0.9;
 		border-style: solid;
 		border-width: medium;
 		border-radius: 130px;
@@ -1584,9 +1584,9 @@
 		border-color: #e3e3e3;
 	}
 
-		.feature .fa {
-			color: #00cdcf;
-		}
+	.feat{
+		text-decoration: underline;
+	}
 
 
 
