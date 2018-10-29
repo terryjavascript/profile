@@ -1755,9 +1755,13 @@
 /* Medium Devices, .visible-md-* */
 		@media (min-width: 895px) and (max-width: 1100px) {
 			.imgPro{
-				width: 120px;
-				height: 120px;
+				width: 140px;
+				height: 140px;
 			}
+			#projects{
+				position: center;
+			}
+		}
 
 
 
