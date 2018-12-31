@@ -1482,8 +1482,8 @@
 
 		@media screen and (max-width: 480px) {
 			#intro {
-				padding: 2em 1em 0.1em 1em;
-				height: 1580px;
+				padding: 2em 1em 1em 1em;
+				height: 1630px;
 			}
 			#profilePic{
 				margin-left: 25%;
