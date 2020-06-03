@@ -1497,44 +1497,48 @@
 
 /* Mobile Phone */
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 900px) {
 			#intro {
 				padding: 2em 1em 1em 1em;
-				height: 1630px;
-				padding-left: 20px;
+				height: 1770px;
+				padding-left: 50px;
+				position: center;
 			}
 			#profilePic{
 				margin-left: 30%;
 			}
 			#profileD{
 				width: 320px;
+				margin-left: 10%;
 			}	
 			#profileB{
 				width: 320px;
 				padding-right: 40px;
 				padding-left: 40px;
+				margin-left: 10%;
 				text-align: center;
 			}
 			#intro2{
-				width: 300px;
+				width: 320px;
 			}
 			.features{
 				width: 300px;
 				font-size: 90%;
 			}
 			.feature{
-			margin-right: 1px;
+			margin-right: 0px;
+			text-align: center;
+			display: inline-block;
 			}
 			.panel{
 				position: relative;
-				width: 420px;
-				bottom: -1270px;
-				right: 110px;
-				text-align: center;
+				bottom: -82%;
+				right: 25%;
+
 			}
 			.tools{
-				width: 37px;
-				height: 37px;
+				width: 35px;
+				height: 35px;
 			}
 		}
 
@@ -1625,19 +1629,7 @@
 
 		}
 
-		@media screen and (max-width: 480px) {
 
-			#quote {
-				padding: 1em 1em 0.1em 1em;
-				font-size: 78%;
-				position: absolute;
-			}
-
-				#quote p br {
-					display: none;
-			}
-
-		}
 
 		.hobbies{
 			text-align: center;
@@ -1681,13 +1673,7 @@
 			font-size: 0.8em;
 		}
 
-		@media screen and (max-width: 480px) {
 
-			#footer {
-				margin-top: 0%;
-			}
-
-		}
 /* smaller projects */
 	
 	#projects {
@@ -1739,7 +1725,7 @@
 		}
 	}
 
-		@media (min-width: 671px) and (max-width: 894px) {
+		@media (min-width: 671px) and (max-width: 1100px) {
 			#projects {
 				padding: 2em 2em 0.1em 2em;
 				text-align: center;
@@ -1758,29 +1744,11 @@
 			}
 		}
 
-		@media (min-width: 575px) and (max-width: 670px) {
+		@media screen and (max-width: 670px) {
 			#projects {
 				padding: 2em 2em 0.1em 2em;
 				text-align: center;
-				height: 900px;
-			}
-			.project{
-				width: 50%;
-				height: 65%;
-			}
-			.imgPro{
-				width: 135px;
-				height: 130px;
-			}
-			#project2{
-				margin-top: -40%;
-			}
-		}
-
-		@media screen and (max-width: 574px) {
-			#projects {
-				padding: 2em 2em 0.1em 2em;
-				text-align: center;
+				position: center;
 				height: 900px;
 			}
 			.project{
@@ -1800,16 +1768,6 @@
 			}
 		}
 
-/* Medium Devices, .visible-md-* */
-		@media (min-width: 895px) and (max-width: 1100px) {
-			.imgPro{
-				width: 140px;
-				height: 140px;
-			}
-			#projects{
-				position: center;
-			}
-		}
 
 
 
