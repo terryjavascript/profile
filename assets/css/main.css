@@ -1502,18 +1502,19 @@
 		@media screen and (max-width: 900px) {
 			#intro {
 				padding: 2em 1em 1em 1em;
-				height: 1820px;
+				height: 1830px;
 				padding-left: 50px;
 				text-align: center;
 				display: inline-block;
 			}
 			#profilePic{
-				margin-left: 17%;
+				margin-left: 15%;
 				text-align: center;
 				display: inline-block;
 			}
 			#profileD{
 				width: 300px;
+				margin-left: -10%;
 				text-align: center;
 				display: inline-block;
 			}	
@@ -1526,6 +1527,7 @@
 			}
 			#intro2{
 				width: 300px;
+				margin-left: -10%;
 				text-align: center;
 				display: inline-block;
 			}
@@ -1537,7 +1539,7 @@
 			}
 			.panel{
 				position: relative;
-				bottom: -77%;
+				bottom: -79%;
 				right: 25%;
 
 			}
@@ -1640,9 +1642,9 @@
 				@media screen and (max-width: 480px) {
 
 			.hobbies {
-				margin-top: 30%;
+				margin-top: 25%;
 				padding-top: 0%;
-				font-size: 70%;
+				font-size: 75%;
 			}
 		}
 
