@@ -1443,6 +1443,8 @@
 		background-color: #ffffff;
 		border-radius: 4px;
 		height: 870px;
+		text-align: center;
+		display: inline-block;
 
 	}
 
@@ -1500,16 +1502,21 @@
 		@media screen and (max-width: 900px) {
 			#intro {
 				padding: 2em 1em 1em 1em;
-				height: 1770px;
+				height: 1850px;
 				padding-left: 50px;
-				position: center;
+				text-align: center;
+				display: inline-block;
 			}
 			#profilePic{
-				margin-left: 30%;
+				margin-left: 20%;
+				text-align: center;
+				display: inline-block;
 			}
 			#profileD{
-				width: 320px;
+				width: 300px;
 				margin-left: 10%;
+				text-align: center;
+				display: inline-block;
 			}	
 			#profileB{
 				width: 320px;
@@ -1517,22 +1524,27 @@
 				padding-left: 40px;
 				margin-left: 10%;
 				text-align: center;
+				display: inline-block;
 			}
 			#intro2{
 				width: 320px;
+				text-align: center;
+				display: inline-block;
 			}
 			.features{
 				width: 300px;
 				font-size: 90%;
+				text-align: center;
+				display: inline-block;
 			}
 			.feature{
-			margin-right: 0px;
-			text-align: center;
-			display: inline-block;
+				margin-right: 0px;
+				text-align: center;
+				display: inline-block;
 			}
 			.panel{
 				position: relative;
-				bottom: -82%;
+				bottom: -79%;
 				right: 25%;
 
 			}
@@ -1614,7 +1626,7 @@
 		@media (min-width: 736px) and (max-width: 1199px) {
 
 			#quote {
-				padding: 2em 2em 0.1em 2em;
+				padding: 2em 2em 0em 2em;
 				font-size: 85%;
 			}
 
@@ -1623,7 +1635,7 @@
 		@media screen and (max-width: 735px) {
 
 			#quote {
-				padding: 2em 2em 0.1em 2em;
+				padding: 2em 2em 0em 2em;
 				font-size: 80%;
 			}
 
@@ -1634,20 +1646,12 @@
 		.hobbies{
 			text-align: center;
 		}
-				@media screen and (max-width: 430px) {
+				@media screen and (max-width: 480px) {
 
 			.hobbies {
-				margin-top: 100%;
+				margin-top: 50%;
 				padding-top: 0%;
 				font-size: 70%;
-			}
-		}
-				@media (min-width: 431px) and (max-width: 480px) {
-
-			.hobbies {
-				margin-top: 77%;
-				padding-top: 20%;
-				font-size: 75%;
 			}
 		}
 
@@ -1727,7 +1731,7 @@
 
 		@media (min-width: 671px) and (max-width: 1100px) {
 			#projects {
-				padding: 2em 2em 0.1em 2em;
+				padding: 2em 2em 0em 2em;
 				text-align: center;
 				height: 900px;
 			}
@@ -1746,7 +1750,7 @@
 
 		@media screen and (max-width: 670px) {
 			#projects {
-				padding: 2em 2em 0.1em 2em;
+				padding: 2em 2em 0em 2em;
 				text-align: center;
 				position: center;
 				height: 900px;
