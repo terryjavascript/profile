@@ -1531,7 +1531,7 @@
 			}
 			#intro2{
 				width: 300px;
-				margin-left: -10%;
+				margin-left: -8%;
 				text-align: center;
 				display: inline-block;
 			}
@@ -1542,8 +1542,8 @@
 			}
 			.panel{
 				position: relative;
-				bottom: -80%;
-				right: 25%;
+				bottom: -79.5%;
+				
 
 			}
 			.tools{
