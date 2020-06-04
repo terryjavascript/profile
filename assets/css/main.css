@@ -1508,13 +1508,13 @@
 				display: inline-block;
 			}
 			#profilePic{
-				margin-left: 15%;
+				margin-left: 10%;
 				text-align: center;
 				display: inline-block;
 			}
 			#profileD{
 				width: 300px;
-				margin-left: -10%;
+				margin-left: -15%;
 				text-align: center;
 				display: inline-block;
 			}	
@@ -1527,19 +1527,19 @@
 			}
 			#intro2{
 				width: 300px;
-				margin-left: -10%;
+				margin-left: -15%;
 				text-align: center;
 				display: inline-block;
 			}
 			.features{
 				width: 300px;
 				font-size: 90%;
-				margin-left: -10%;
+				margin-left: -5%;
 				display: inline-block;
 			}
 			.panel{
 				position: relative;
-				bottom: -79%;
+				bottom: -82%;
 				right: 25%;
 
 			}
