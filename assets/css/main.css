@@ -1500,6 +1500,9 @@
 /* Mobile Phone */
 
 		@media screen and (max-width: 900px) {
+			#headText{
+				margin-left: -8%;
+			}
 			#intro {
 				padding: 2em 1em 1em 1em;
 				height: 1830px;
@@ -1508,18 +1511,19 @@
 				display: inline-block;
 			}
 			#profilePic{
-				margin-left: 15%;
+				margin-left: 5%;
 				text-align: center;
 				display: inline-block;
 			}
 			#profileD{
 				width: 300px;
-				margin-left: -10%;
+				margin-left: -8%;
 				text-align: center;
 				display: inline-block;
 			}	
 			#profileB{
 				width: 300px;
+				margin-left: -10%;
 				padding-right: 40px;
 				padding-left: 40px;
 				text-align: center;
@@ -1527,19 +1531,18 @@
 			}
 			#intro2{
 				width: 300px;
-				margin-left: -10%;
+				margin-left: -8%;
 				text-align: center;
 				display: inline-block;
 			}
 			.features{
 				width: 300px;
 				font-size: 90%;
-				margin-left: -10%;
 				display: inline-block;
 			}
 			.panel{
 				position: relative;
-				bottom: -79%;
+				bottom: -79.5%;
 				right: 25%;
 
 			}
