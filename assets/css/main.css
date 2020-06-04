@@ -1501,7 +1501,7 @@
 
 		@media screen and (max-width: 900px) {
 			#headText{
-				margin-left: -10%;
+				margin-left: -8%;
 			}
 			#intro {
 				padding: 2em 1em 1em 1em;
@@ -1511,12 +1511,13 @@
 				display: inline-block;
 			}
 			#profilePic{
+				margin-left: 5%;
 				text-align: center;
 				display: inline-block;
 			}
 			#profileD{
 				width: 300px;
-				margin-left: -10%;
+				margin-left: -8%;
 				text-align: center;
 				display: inline-block;
 			}	
