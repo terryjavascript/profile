@@ -1500,6 +1500,9 @@
 /* Mobile Phone */
 
 		@media screen and (max-width: 900px) {
+			#headText{
+				margin-left: -10%;
+			}
 			#intro {
 				padding: 2em 1em 1em 1em;
 				height: 1830px;
@@ -1513,7 +1516,7 @@
 			}
 			#profileD{
 				width: 300px;
-				margin-left: -15%;
+				margin-left: -10%;
 				text-align: center;
 				display: inline-block;
 			}	
@@ -1527,7 +1530,7 @@
 			}
 			#intro2{
 				width: 300px;
-				margin-left: -12.5%;
+				margin-left: -10%;
 				text-align: center;
 				display: inline-block;
 			}
@@ -1538,7 +1541,7 @@
 			}
 			.panel{
 				position: relative;
-				bottom: -82%;
+				bottom: -80%;
 				right: 25%;
 
 			}
