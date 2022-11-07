@@ -1677,7 +1677,7 @@
 /* smaller projects */
 	
 	#projects {
-		height: 600px;
+		height: 65em;
 		padding: 4em 4em 2em 4em;
 		background-color: #ffffff;
 		border-radius: 4px;
@@ -1706,7 +1706,7 @@
 /* Desktop View */
 	@media (min-width: 1691px) {
 		#projects {
-			height: 850px;
+			height: 65em;
 		}
 		.project{
 			padding-right: 50px;
@@ -1717,7 +1717,7 @@
 /* 1300px View */
 	@media (min-width: 1299px) and (max-width: 1690px) {
 		#projects {
-			height: 700px;
+			height: 65em;
 		}
 		.project{
 			padding-right: 20px;
