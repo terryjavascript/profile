@@ -1,5 +1,3 @@
-/*MOBILE QUERY SETTINGS FOR ENC-INC */
-
 /* Desktop Version */
 @media (min-width: 1400px) and (max-width: 1699px) {
 
@@ -12,11 +10,74 @@
 
 /* Small Devices */
 @media (min-width: 768px) and (max-width: 991px) {
-
+    #intro {
+        padding: 2em !important;
+        width: 100%;
+    height: auto;
+    }
+    #intro2 {
+        width: 300px;
+        margin-left: 8%;
+    }
+    .features {
+        width: 300px;
+    }
+    .feature {
+        width: auto;
+    }
+    .panel {
+        position: inherit;
+       
+        width: 100%;
+        display: block;
+        max-width: 300px;
+        margin: 0 auto;
+    }
 }
 
 /* Tablet */
-@media (min-width: 431px) and (max-width: 767px) {
+@media (max-width: 767px) {
+    #wrapper > .main {
+        margin-bottom: 1em;
+        padding: 2em !important;
+    }
+    #headText {
+        margin-left: 0;
+    }
+    div#intro1 {
+        width: 100%;
+        margin: 0 !important;
+    }
+    #profilePic {
+        margin-left: 0 !important;
+    }
+    #profileD {
+     
+        margin-left: 0;
+    }
+    #profileB {
+        margin-left: 0;
+    }
+    #intro2 {
+       
+        float: none;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+.feature {
+   
+    padding-left: 0px !important;
+}
+.panel {
+    position: inherit;
+    bottom: -79.5%;
+    right: 27%;
+    width: 100%;
+    float: none;
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+}
 
 }
 
