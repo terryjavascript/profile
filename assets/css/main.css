@@ -801,7 +801,7 @@
 
 	ul {
 		list-style: disc;
-		margin: 2em 0 2em 0;
+		margin: 2em 0 4em 0;
 		padding-left: 1em;
 	}
 
@@ -909,7 +909,7 @@
 			@media screen and (max-width: 480px) {
 
 				ul.actions {
-					margin: 0 0 1em 0;
+					margin: 2em 0 2em 0;
 				}
 
 					ul.actions li {
@@ -1786,7 +1786,7 @@
 	min-width:280px;
 }
 
-.animated-text span{
+.animated-text span{ 
 	position: relative;
 }
 
