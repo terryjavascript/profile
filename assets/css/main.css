@@ -909,7 +909,7 @@
 			@media screen and (max-width: 480px) {
 
 				ul.actions {
-					margin: 0 0 2em 0;
+					margin: 0 0 1em 0;
 				}
 
 					ul.actions li {
@@ -1505,7 +1505,7 @@
 			}
 			#intro {
 				padding: 2em 1em 1em 1em;
-				height: 1830px;
+				height: auto;
 				padding-left: 50px;
 				text-align: center;
 				display: inline-block;
