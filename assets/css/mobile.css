@@ -33,7 +33,7 @@
         max-width: 300px;
         margin: 0 auto;
     }
-    .animated-text{
+    .animated-text span::after {
         height:50%;
     }
 }
