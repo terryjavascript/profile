@@ -47,6 +47,7 @@
     div#intro1 {
         width: 100%;
         margin: 0 !important;
+        padding-bottom:10%;
     }
     #profilePic {
         margin-left: 0 !important;
