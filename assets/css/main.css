@@ -1678,36 +1678,35 @@
 /* smaller projects */
 	
 	#projects {
-		padding: 4em 4em 2em 4em;
+		padding: 4em;
 		background-color: #ffffff;
 		border-radius: 4px;
 		height: auto !important;
-    float: left;
-    width: 100%;
+    	float: left;
+    	width: 100%;
 
 	}
 
 	.project {
-		padding-top: 30px;
+		padding-top: 25px;
 		float: left;
 		text-align: center;
 	}
 
 	.imgPro{
 		width: 200px;
-		height: 190px;
-		padding: 15px;
-		opacity: 0.8;
+		height: 200px;
+		padding: 10px;
 	}
 
-		#projects > header:first-child {
+	#projects > header:first-child {
 			text-align: center;
 		}
 
 /* Desktop View */
 	@media (min-width: 1691px) {
 		#projects {
-			height: 65em;
+			height: auto;
 		}
 		.project{
 			padding-right: 50px;
@@ -1718,7 +1717,7 @@
 /* 1300px View */
 	@media (min-width: 1299px) and (max-width: 1690px) {
 		#projects {
-			height: 65em;
+			height: auto;
 		}
 		.project{
 			padding-right: 20px;
@@ -1728,9 +1727,9 @@
 
 		@media (min-width: 671px) and (max-width: 1100px) {
 			#projects {
-				padding: 2em 2em 0em 2em;
+				padding: 2em;
 				text-align: center;
-				height: 900px;
+				height: auto;
 			}
 			.project{
 				width: 50%;
@@ -1748,7 +1747,7 @@
 
 		@media screen and (max-width: 670px) {
 			#projects {
-				padding: 2em 2em 0em 2em;
+				padding: 2em;
 				text-align: center;
 				position: center;
 				height: 900px;
@@ -1763,7 +1762,7 @@
 				margin-bottom: 0;
 			}
 			.imgPro{
-				width: 135px;
+				width: 130px;
 				height: 130px;
 			}
 			#project2{
