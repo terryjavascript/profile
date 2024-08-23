@@ -1,1839 +1,436 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400");
-@import url('https://fonts.googleapis.com/css?family=Varela');
-
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-		margin: 0;
-		padding: 0;
-		border: 0;
-		font-size: 100%;
-		font: inherit;
-		vertical-align: baseline;
-	}
-
-	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-		display: block;
-	}
-
-	body {
-		line-height: 1;
-	}
-
-	ol, ul {
-		list-style: none;
-	}
-
-	blockquote, q {
-		quotes: none;
-	}
-
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
-
-	table {
-		border-collapse: collapse;
-		border-spacing: 0;
-	}
-
-	body {
-		-webkit-text-size-adjust: none;
-	}
-
-/* Box Model */
-
-	*, *:before, *:after {
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-	}
-
-/* Basic */
-
-	@-ms-viewport {
-		width: device-width;
-	}
-
-	body {
-		-ms-overflow-style: scrollbar;
-	}
-
-	@media screen and (max-width: 480px) {
-
-		html, body {
-			min-width: 320px;
-		}
-
-	}
-
-	body {
-		background: #f4f4f4;
-	}
-
-		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
-		}
-
-/* Type */
-
-	body {
-		background-color: #f4f4f4;
-		color: #666666;
-	}
-
-	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 17pt;
-		font-weight: 200;
-		line-height: 1.65;
-	}
-
-		@media screen and (max-width: 1680px) {
-
-			body, input, select, textarea {
-				font-size: 13pt;
-			}
-
-		}
-
-		@media screen and (max-width: 1280px) {
-
-			body, input, select, textarea {
-				font-size: 12pt;
-			}
-
-		}
-
-		@media screen and (max-width: 360px) {
-
-			body, input, select, textarea {
-				font-size: 11pt;
-			}
-
-		}
-
-	a {
-		-moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		text-decoration: none;
-	}
-
-		a:hover {
-			border-bottom-color: transparent;
-		}
-
-	strong, b {
-		font-weight: 400;
-	}
-
-	em, i {
-		font-style: italic;
-	}
-
-	p {
-		margin: 0 0 2em 0;
-	}
-
-	h1, h2, h3, h4, h5, h6 {
-		font-weight: 400;
-		line-height: 1.5;
-		margin: 0 0 1em 0;
-		text-transform: uppercase;
-		letter-spacing: 0.375rem;
-	}
-
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: inherit;
-			text-decoration: none;
-		}
-
-	h1 {
-		font-size: 2em;
-	}
-
-	h2 {
-		font-size: 1.75em;
-	}
-
-	h3 {
-		font-size: 1.25em;
-	}
-
-	h4 {
-		font-size: 1em;
-	}
-
-	h5 {
-		font-size: 0.9em;
-	}
-
-	h6 {
-		font-size: 0.7em;
-	}
-
-	@media screen and (max-width: 736px) {
-
-		h1 {
-			font-size: 1.5em;
-		}
-
-		h2 {
-			font-size: 1.25em;
-		}
-
-		h3 {
-			font-size: 1em;
-		}
-
-	}
-
-	sub {
-		font-size: 0.8em;
-		position: relative;
-		top: 0.5em;
-	}
-
-	sup {
-		font-size: 0.8em;
-		position: relative;
-		top: -0.5em;
-	}
-
-	blockquote {
-		border-left: solid 4px;
-		font-style: italic;
-		margin: 0 0 2em 0;
-		padding: 0.5em 0 0.5em 2em;
-	}
-
-	code {
-		border-radius: 4px;
-		border: solid 1px;
-		font-family: "Courier New", monospace;
-		font-size: 0.9em;
-		margin: 0 0.25em;
-		padding: 0.25em 0.65em;
-	}
-
-	pre {
-		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
-		font-size: 0.9em;
-		margin: 0 0 2em 0;
-	}
-
-		pre code {
-			display: block;
-			line-height: 1.75;
-			padding: 1em 1.5em;
-			overflow-x: auto;
-		}
-
-	hr {
-		border: 0;
-		border-bottom: solid 1px;
-		margin: 2em 0;
-	}
-
-		hr.major {
-			margin: 3em 0;
-		}
-
-	.align-left {
-		text-align: left;
-	}
-
-	.align-center {
-		text-align: center;
-	}
-
-	.align-right {
-		text-align: right;
-	}
-
-	input, select, textarea {
-		color: #444444;
-	}
-
-	a {
-		color: inherit;
-	}
-
-		a:hover {
-			color: #34c964 !important;
-		}
-
-	strong, b {
-		color: #444444;
-	}
-
-	h1, h2, h3, h4, h5, h6 {
-		color: #444444;
-	}
-
-	blockquote {
-		border-left-color: #666666;
-	}
-
-	code {
-		background: rgba(144, 144, 144, 0.075);
-		border-color: #666666;
-	}
-
-	hr {
-		border-bottom-color: #666666;
-	}
-
-/* Box */
-
-	.box {
-		border-radius: 4px;
-		border: solid 1px;
-		margin-bottom: 2em;
-		padding: 1.5em;
-	}
-
-		.box > :last-child,
-		.box > :last-child > :last-child,
-		.box > :last-child > :last-child > :last-child {
-			margin-bottom: 0;
-		}
-
-		.box.alt {
-			border: 0;
-			border-radius: 0;
-			padding: 0;
-		}
-
-	.box {
-		border-color: #666666;
-	}
-
-/* Button */
-
-	#button1{
-		margin-top: 50%;
-		box-shadow: inset 0 0 0 2px;
-		color: white !important;
-	}
-	#button:hover {
-			color: #34c964;
-	}
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	button,
-	.button {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		-moz-transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-webkit-transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-ms-transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		border-radius: 4px;
-		border: 0;
-		cursor: pointer;
-		display: inline-block;
-		font-weight: 400;
-		height: 3.5em;
-		line-height: 3.5em;
-		padding: 0 2em 0 2.375em;
-		text-align: center;
-		text-decoration: none;
-		white-space: nowrap;
-		text-transform: uppercase;
-		letter-spacing: 0.325em;
-		font-size: 0.725em;
-	}
-
-		input[type="submit"].icon:before,
-		input[type="reset"].icon:before,
-		input[type="button"].icon:before,
-		button.icon:before,
-		.button.icon:before {
-			margin-right: 0.5em;
-		}
-
-		input[type="submit"].fit,
-		input[type="reset"].fit,
-		input[type="button"].fit,
-		button.fit,
-		.button.fit {
-			display: block;
-			margin: 0 0 1em 0;
-			width: 100%;
-		}
-
-		input[type="submit"].big,
-		input[type="reset"].big,
-		input[type="button"].big,
-		button.big,
-		.button.big {
-			font-size: 0.8em;
-			padding: 0 2.5em 0 2.875em;
-			height: 3.75em;
-			line-height: 3.75em;
-		}
-
-		input[type="submit"].disabled, input[type="submit"]:disabled,
-		input[type="reset"].disabled,
-		input[type="reset"]:disabled,
-		input[type="button"].disabled,
-		input[type="button"]:disabled,
-		button.disabled,
-		button:disabled,
-		.button.disabled,
-		.button:disabled {
-			-moz-pointer-events: none;
-			-webkit-pointer-events: none;
-			-ms-pointer-events: none;
-			pointer-events: none;
-			opacity: 0.25;
-		}
-
-		@media screen and (max-width: 480px) {
-
-			input[type="submit"],
-			input[type="reset"],
-			input[type="button"],
-			button,
-			.button {
-				padding: 0;
-			}
-
-		}
-
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	button,
-	.button {
-		background-color: transparent;
-		box-shadow: inset 0 0 0 2px #666666;
-		color: #444444 !important;
-	}
-
-		input[type="submit"]:hover,
-		input[type="reset"]:hover,
-		input[type="button"]:hover,
-		button:hover,
-		.button:hover {
-			color: #34c964 !important; /*button color after*/
-			box-shadow: inset 0 0 0 2px #34c964;
-		}
-
-		input[type="submit"]:active,
-		input[type="reset"]:active,
-		input[type="button"]:active,
-		button:active,
-		.button:active {
-			background-color: rgba(239, 100, 128, 0.15);
-		}
-
-		input[type="submit"].icon:before,
-		input[type="reset"].icon:before,
-		input[type="button"].icon:before,
-		button.icon:before,
-		.button.icon:before {
-			color: #999999; /*button color before*/
-		}
-
-/* Form */
-
-	form {
-		margin: 0 0 2em 0;
-	}
-
-	label {
-		display: block;
-		font-size: 0.9em;
-		font-weight: 400;
-		margin: 0 0 1em 0;
-	}
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	select,
-	textarea {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		border-radius: 4px;
-		border: none;
-		border: solid 1px;
-		color: inherit;
-		display: block;
-		outline: 0;
-		padding: 0 1em;
-		text-decoration: none;
-		width: 100%;
-	}
-
-		input[type="text"]:invalid,
-		input[type="password"]:invalid,
-		input[type="email"]:invalid,
-		select:invalid,
-		textarea:invalid {
-			box-shadow: none;
-		}
-
-	.select-wrapper {
-		text-decoration: none;
-		display: block;
-		position: relative;
-	}
-
-		.select-wrapper:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
-			font-style: normal;
-			font-weight: normal;
-			text-transform: none !important;
-		}
-
-		.select-wrapper:before {
-			content: '\f078';
-			display: block;
-			height: 2.75em;
-			line-height: 2.75em;
-			pointer-events: none;
-			position: absolute;
-			right: 0;
-			text-align: center;
-			top: 0;
-			width: 2.75em;
-		}
-
-		.select-wrapper select::-ms-expand {
-			display: none;
-		}
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	select {
-		height: 2.75em;
-	}
-
-	textarea {
-		padding: 0.75em 1em;
-	}
-
-	input[type="checkbox"],
-	input[type="radio"] {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		display: block;
-		float: left;
-		margin-right: -2em;
-		opacity: 0;
-		width: 1em;
-		z-index: -1;
-	}
-
-		input[type="checkbox"] + label,
-		input[type="radio"] + label {
-			text-decoration: none;
-			cursor: pointer;
-			display: inline-block;
-			font-size: 1em;
-			font-weight: 200;
-			padding-left: 2.4em;
-			padding-right: 0.75em;
-			position: relative;
-		}
-
-			input[type="checkbox"] + label:before,
-			input[type="radio"] + label:before {
-				-moz-osx-font-smoothing: grayscale;
-				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
-				font-style: normal;
-				font-weight: normal;
-				text-transform: none !important;
-			}
-
-			input[type="checkbox"] + label:before,
-			input[type="radio"] + label:before {
-				border-radius: 4px;
-				border: solid 1px;
-				content: '';
-				display: inline-block;
-				height: 1.65em;
-				left: 0;
-				line-height: 1.58125em;
-				position: absolute;
-				text-align: center;
-				top: 0;
-				width: 1.65em;
-			}
-
-		input[type="checkbox"]:checked + label:before,
-		input[type="radio"]:checked + label:before {
-			content: '\f00c';
-		}
-
-	input[type="checkbox"] + label:before {
-		border-radius: 4px;
-	}
-
-	input[type="radio"] + label:before {
-		border-radius: 100%;
-	}
-
-	::-webkit-input-placeholder {
-		opacity: 1.0;
-	}
-
-	:-moz-placeholder {
-		opacity: 1.0;
-	}
-
-	::-moz-placeholder {
-		opacity: 1.0;
-	}
-
-	:-ms-input-placeholder {
-		opacity: 1.0;
-	}
-
-	.formerize-placeholder {
-		opacity: 1.0;
-	}
-
-	label {
-		color: #444444;
-	}
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	select,
-	textarea {
-		background: rgba(144, 144, 144, 0.075);
-		border-color: #666666;
-	}
-
-		input[type="text"]:focus,
-		input[type="password"]:focus,
-		input[type="email"]:focus,
-		select:focus,
-		textarea:focus {
-			border-color: #46fdb4;
-			box-shadow: 0 0 0 1px #46fdb4;
-		}
-
-	.select-wrapper:before {
-		color: #666666;
-	}
-
-	input[type="checkbox"] + label,
-	input[type="radio"] + label {
-		color: #666666;
-	}
-
-		input[type="checkbox"] + label:before,
-		input[type="radio"] + label:before {
-			background: rgba(144, 144, 144, 0.075);
-			border-color: #666666;
-		}
-
-	input[type="checkbox"]:checked + label:before,
-	input[type="radio"]:checked + label:before {
-		background-color: #46fdb4;
-		border-color: #46fdb4;
-		color: #ffffff;
-	}
-
-	input[type="checkbox"]:focus + label:before,
-	input[type="radio"]:focus + label:before {
-		border-color: #46fdb4;
-		box-shadow: 0 0 0 1px #46fdb4;
-	}
-
-	::-webkit-input-placeholder {
-		color: #999999 !important;
-	}
-
-	:-moz-placeholder {
-		color: #999999 !important;
-	}
-
-	::-moz-placeholder {
-		color: #999999 !important;
-	}
-
-	:-ms-input-placeholder {
-		color: #999999 !important;
-	}
-
-	.formerize-placeholder {
-		color: #999999 !important;
-	}
-
-/* Icon */
-
-	.icon {
-		text-decoration: none;
-		border-bottom: none;
-		position: relative;
-	}
-
-		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
-			font-style: normal;
-			font-weight: normal;
-			text-transform: none !important;
-		}
-
-		.icon > .label {
-			display: none;
-		}
-
-		.icon.major {
-			display: block;
-			margin: 0 0 1.5em 0;
-		}
-
-			.icon.major:before {
-				cursor: default;
-				font-size: 2.5rem;
-				box-shadow: inset 0 0 0 2px #666666;
-				width: 2.5em;
-				height: 2.5em;
-				line-height: 2.5em;
-				display: inline-block;
-				border-radius: 100%;
-				color: #666666;
-			}
-
-		@media screen and (max-width: 736px) {
-
-			.icon.major:before {
-				font-size: 2rem;
-			}
-
-		}
-
-/* Image */
-
-	.image {
-		border-radius: 4px;
-		border: 0;
-		display: inline-block;
-		position: relative;
-	}
-
-		.image img {
-			border-radius: 4px;
-			display: block;
-		}
-
-		.image.left, .image.right {
-			max-width: 40%;
-		}
-
-			.image.left img, .image.right img {
-				width: 100%;
-			}
-
-		.image.left {
-			float: left;
-			margin: 0 1.5em 1em 0;
-			top: 0.25em;
-		}
-
-		.image.right {
-			float: right;
-			margin: 0 0 1em 1.5em;
-			top: 0.25em;
-		}
-
-		.image.fit {
-			display: block;
-			margin: 0 0 2em 0;
-			width: 100%;
-		}
-
-			.image.fit img {
-				width: 100%;
-			}
-
-		.image.main {
-			display: block;
-			margin: 0 0 3em 0;
-			width: 100%;
-		}
-
-			.image.main img {
-				width: 100%;
-			}
-
-/* List */
-
-	ol {
-		list-style: decimal;
-		margin: 0 0 2em 0;
-		padding-left: 1.25em;
-	}
-
-		ol li {
-			padding-left: 0.25em;
-		}
-
-	ul {
-		list-style: disc;
-		margin: 2em 0 4em 0;
-		padding-left: 1em;
-	}
-
-		ul li {
-			padding-left: 0.5em;
-		}
-
-		ul.alt {
-			list-style: none;
-			padding-left: 0;
-		}
-
-			ul.alt li {
-				border-top: solid 1px;
-				padding: 0.5em 0;
-			}
-
-				ul.alt li:first-child {
-					border-top: 0;
-					padding-top: 0;
-				}
-
-		ul.icons {
-			cursor: default;
-			list-style: none;
-			padding-left: 0;
-		}
-
-			ul.icons li {
-				display: inline-block;
-				padding: 0 1em 0 0;
-			}
-
-				ul.icons li:last-child {
-					padding-right: 0;
-				}
-
-		ul.actions {
-			cursor: default;
-			list-style: none;
-			padding-left: 0;
-		}
-
-			ul.actions li {
-				display: inline-block;
-				padding: 0 1em 0 0;
-				vertical-align: middle;
-			}
-
-				ul.actions li:last-child {
-					padding-right: 0;
-				}
-
-			ul.actions.small li {
-				padding: 0 0.5em 0 0;
-			}
-
-			ul.actions.vertical li {
-				display: block;
-				padding: 1em 0 0 0;
-			}
-
-				ul.actions.vertical li:first-child {
-					padding-top: 0;
-				}
-
-				ul.actions.vertical li > * {
-					margin-bottom: 0;
-				}
-
-			ul.actions.vertical.small li {
-				padding: 0.5em 0 0 0;
-			}
-
-				ul.actions.vertical.small li:first-child {
-					padding-top: 0;
-				}
-
-			ul.actions.fit {
-				display: table;
-				margin-left: -1em;
-				padding: 0;
-				table-layout: fixed;
-				width: calc(100% + 1em);
-			}
-
-				ul.actions.fit li {
-					display: table-cell;
-					padding: 0 0 0 1em;
-				}
-
-					ul.actions.fit li > * {
-						margin-bottom: 0;
-					}
-
-				ul.actions.fit.small {
-					margin-left: -0.5em;
-					width: calc(100% + 0.5em);
-				}
-
-					ul.actions.fit.small li {
-						padding: 0 0 0 0.5em;
-					}
-
-			@media screen and (max-width: 480px) {
-
-				ul.actions {
-					margin: 2em 0 2em 0;
-				}
-
-					ul.actions li {
-						padding: 1em 0 0 0;
-						display: block;
-						text-align: center;
-						width: 100%;
-					}
-
-						ul.actions li:first-child {
-							padding-top: 0;
-						}
-
-						ul.actions li > * {
-							width: 100%;
-							margin: 0 !important;
-						}
-
-					ul.actions.small li {
-						padding: 0.5em 0 0 0;
-					}
-
-						ul.actions.small li:first-child {
-							padding-top: 0;
-						}
-
-			}
-
-	dl {
-		margin: 0 0 2em 0;
-	}
-
-		dl dt {
-			display: block;
-			font-weight: 400;
-			margin: 0 0 1em 0;
-		}
-
-		dl dd {
-			margin-left: 2em;
-		}
-
-	ul.alt li {
-		border-top-color: #666666;
-	}
-
-/* Table */
-
-	.table-wrapper {
-		-webkit-overflow-scrolling: touch;
-		overflow-x: auto;
-	}
-
-	table {
-		margin: 0 0 2em 0;
-		width: 100%;
-	}
-
-		table tbody tr {
-			border: solid 1px;
-			border-left: 0;
-			border-right: 0;
-		}
-
-		table td {
-			padding: 0.75em 0.75em;
-		}
-
-		table th {
-			font-size: 0.9em;
-			font-weight: 400;
-			padding: 0 0.75em 0.75em 0.75em;
-			text-align: left;
-		}
-
-		table thead {
-			border-bottom: solid 2px;
-		}
-
-		table tfoot {
-			border-top: solid 2px;
-		}
-
-		table.alt {
-			border-collapse: separate;
-		}
-
-			table.alt tbody tr td {
-				border: solid 1px;
-				border-left-width: 0;
-				border-top-width: 0;
-			}
-
-				table.alt tbody tr td:first-child {
-					border-left-width: 1px;
-				}
-
-			table.alt tbody tr:first-child td {
-				border-top-width: 1px;
-			}
-
-			table.alt thead {
-				border-bottom: 0;
-			}
-
-			table.alt tfoot {
-				border-top: 0;
-			}
-
-	table tbody tr {
-		border-color: #666666;
-	}
-
-		table tbody tr:nth-child(2n + 1) {
-			background-color: rgba(144, 144, 144, 0.075);
-		}
-
-	table th {
-		color: #444444;
-	}
-
-	table thead {
-		border-bottom-color: #666666;
-	}
-
-	table tfoot {
-		border-top-color: #666666;
-	}
-
-	table.alt tbody tr td {
-		border-color: #666666;
-	}
-
-/* Item */
-
-	.item {
-		padding: 3em 3em 1em 3em;
-		background-color: #ffffff;
-		border-radius: 4px;
-		text-align: center;
-	}
-
-		.item header {
-			border-top-left-radius: 4px;
-			border-top-right-radius: 4px;
-			margin: -3em 0 3em -3em;
-			width: calc(100% + 6em);
-			height: 15em;
-			display: -moz-flex;
-			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
-			-moz-align-items: center;
-			-webkit-align-items: center;
-			-ms-align-items: center;
-			align-items: center;
-			-moz-justify-content: center;
-			-webkit-justify-content: center;
-			-ms-justify-content: center;
-			justify-content: center;
-			background-color: #444;
-			color: rgba(255, 255, 255, 0.75);
-			position: relative;
-			overflow: hidden;
-		}
-
-			.item header input, .item header select, .item header textarea {
-				color: #ffffff;
-			}
-
-			.item header a {
-				color: inherit;
-			}
-
-				.item header a:hover {
-					color: #46fdb4 !important;
-				}
-
-			.item header strong, .item header b {
-				color: #ffffff;
-			}
-
-			.item header h1, .item header h2, .item header h3, .item header h4, .item header h5, .item header h6 {
-				color: #ffffff;
-			}
-
-			.item header blockquote {
-				border-left-color: #ffffff;
-			}
-
-			.item header code {
-				background: rgba(255, 255, 255, 0.075);
-				border-color: #ffffff;
-			}
-
-			.item header hr {
-				border-bottom-color: #ffffff;
-			}
-
-			.item header a {
-				-moz-transition: -moz-transform 0.2s ease;
-				-webkit-transition: -webkit-transform 0.2s ease;
-				-ms-transition: -ms-transform 0.2s ease;
-				transition: transform 0.2s ease;
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				display: block;
-			}
-
-				.item header a:before {
-					content: '';
-					display: block;
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
-					background-color: rgba(0, 0, 0, 0.25);
-					background-image: url("images/overlay.png");
-				}
-
-			.item header:hover a {
-				-moz-transform: scale(1.1);
-				-webkit-transform: scale(1.1);
-				-ms-transform: scale(1.1);
-				transform: scale(1.1);
-			}
-
-			.item header > * {
-				position: relative;
-				z-index: 1;
-			}
-
-			.item header h3 {
-				margin: 0;
-				-moz-pointer-events: none;
-				-webkit-pointer-events: none;
-				-ms-pointer-events: none;
-				pointer-events: none;
-			}
-
-	.items {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-wrap: wrap;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		width: calc(100% + 2em);
-		margin: -2em 0 0 -2em;
-	}
-
-		.items .item {
-			margin: 2em 0 0 2em;
-			width: calc(50% - 2em);
-		}
-
-	@media screen and (max-width: 980px) {
-
-		.item header {
-			height: 25em;
-		}
-
-		.items {
-			-moz-flex-direction: column;
-			-webkit-flex-direction: column;
-			-ms-flex-direction: column;
-			flex-direction: column;
-			-moz-flex-wrap: nowrap;
-			-webkit-flex-wrap: nowrap;
-			-ms-flex-wrap: nowrap;
-			flex-wrap: nowrap;
-			width: 100%;
-			margin: 0;
-		}
-
-			.items .item {
-				width: 100%;
-				margin: 0 0 2em 0;
-			}
-
-				.items .item:last-child {
-					margin-bottom: 0;
-				}
-
-	}
-
-	@media screen and (max-width: 736px) {
-
-		.item header {
-			height: 15em;
-		}
-
-		.items .item {
-			margin: 0 0 1em 0;
-		}
-
-	}
-
-	@media screen and (max-width: 480px) {
-
-		.item {
-			padding: 2em 1em 0.1em 1em;
-		}
-
-			.item header {
-				height: 12em;
-				margin: -2em 0 2em -1em;
-				width: calc(100% + 2em);
-			}
-
-	}
-
-/* Wrapper */
-
-	#wrapper {
-		width: 64em;
-		margin: 0 auto;
-		max-width: calc(100% - 4em);
-		padding: 4em 0 2em 0;
-	}
-
-		#wrapper > .main {
-			margin-bottom: 4em;
-		}
-
-		@media screen and (max-width: 980px) {
-
-			#wrapper {
-				padding: 2em 0 2em 0;
-			}
-
-				#wrapper > .main {
-					margin-bottom: 2em;
-				}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#wrapper {
-				max-width: calc(100% - 2em);
-				padding: 1em 0 0.1em 0;
-			}
-
-				#wrapper > .main {
-					margin-bottom: 1em;
-				}
-
-		}
-
-/* Header */
-
-	#header {
-		background-color: #444;
-		color: rgba(255, 255, 255, 0.75);
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
-		-moz-justify-content: center;
-		-webkit-justify-content: center;
-		-ms-justify-content: center;
-		justify-content: center;
-		-moz-flex-direction: column;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		padding: 8em 0 6em 0;
-		background-image: url("	../../assets/images/banner.jpg");
-		background-size: cover;
-		opacity: 0.9;
-		background-position: center;
-		background-attachment: fixed;
-		text-align: center;
-		position: relative;
-		cursor: default;
-	}
-
-		#header input, #header select, #header textarea {
-			color: #ffffff;
-		}
-
-		#header a {
-			color: inherit;
-		}
-
-			#header a:hover {
-				color: #46fdb4 !important;
-			}
-
-		#header strong, #header b {
-			color: #ffffff;
-		}
-
-		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
-			color: #ffffff;
-		}
-
-		#header blockquote {
-			border-left-color: #ffffff;
-		}
-
-		#header code {
-			background: rgba(255, 255, 255, 0.075);
-			border-color: #ffffff;
-		}
-
-		#header hr {
-			border-bottom-color: #ffffff;
-		}
-
-		#header:before {
-			content: '';
-			display: block;
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(0, 0, 0, 0.25);
-			background-image: url(("	../../assets/images/overlay.png"));
-		}
-
-		#header h1 {
-			margin-bottom: 0.5em;
-		}
-
-		#header .inner {
-			position: relative;
-			z-index: 1;
-		}
-
-		#header.alt {
-			height: 44em;
-			min-height: 20em;
-			min-height: 75vh;
-		}
-
-			#header.alt:before {
-				-moz-transition: background-color 3s ease;
-				-webkit-transition: background-color 3s ease;
-				-ms-transition: background-color 3s ease;
-				transition: background-color 3s ease;
-				-moz-transition-delay: 1s;
-				-webkit-transition-delay: 1s;
-				-ms-transition-delay: 1s;
-				transition-delay: 1s;
-			}
-
-			#header.alt h1 {
-				font-size: 4.2em;
-				padding: 0 0.5em 0.35em 0.5em;
-				border-bottom: solid 2px #ffffff;
-				font-weight: 200;
-				font-family: 'Varela', sans-serif;
-				text-transform: none;
-				letter-spacing: 0;
-			}
-
-			#header.alt p {
-				text-transform: uppercase;
-				letter-spacing: 0.325rem;
-				font-weight: 400;
-				font-size: 0.8em;
-				padding: 0 1.25em;
-			}
-
-			#header.alt .inner {
-				-moz-transition: opacity 2s ease;
-				-webkit-transition: opacity 2s ease;
-				-ms-transition: opacity 2s ease;
-				transition: opacity 2s ease;
-				opacity: 1;
-			}
-
-		body.is-loading #header.alt:before {
-			background-color: black;
-		}
-
-		body.is-loading #header.alt .inner {
-			opacity: 0;
-		}
-
-		@media screen and (max-width: 1280px) {
-
-			#header {
-				background-attachment: scroll;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#header {
-				padding: 4em 2em 2em 2em;
-				height: 50em;
-			}
-
-				#header.alt h1 {
-					font-size: 2.5em;
-					padding-left: 0;
-					padding-right: 0;
-				}
-
-				#header.alt p {
-					padding: 0;
-				}
-
-				#header.alt .inner {
-					max-width: 20em;
-				}
-
-		}
-
-/* Intro */
-
-	#intro {
-		padding: 4em 4em 2em 4em;
-		background-color: #ffffff;
-		border-radius: 4px;
-		height: 870px;
-		text-align: center;
-		display: inline-block;
-
-	}
-
-	.intros{
-		float: left;
-	}
-
-	#intro1{
-		width: 37%;
-		text-align: center;
-	}
-
-	#intro2{
-		padding-left: 5%;	
-		width: 63%;
-		text-align: center;
-	}
-
-
-	#profilePic{
-		opacity: 0.9;
-		border-style: solid;
-		border-width: medium;
-		border-radius: 130px;
-	}
-
-	#profileD{
-		padding-top: 8%;
-	}
-
-	.panel-primary{
-		position: center;
-		text-align: center;
-	}
-
-/* Desktop View */
-	@media (min-width: 1691px) {
-		#intro {
-			height: 1500px;
-		}
-	}
-
-/* 1300px View */
-	@media (min-width: 1299px) and (max-width: 1690px) {
-		#wrapper > .main {
-			margin-bottom: 6em;
-		}
-		#intro {
-			height: 1200px;
-		}
-	}
-
-/* Mobile Phone */
-
-		@media screen and (max-width: 900px) {
-			#headText{
-				margin-left: -8%;
-			}
-			#intro {
-				padding: 2em 1em 1em 1em;
-				height: auto;
-				padding-left: 50px;
-				text-align: center;
-				display: inline-block;
-			}
-			#profilePic{
-				margin-left: 5%;
-				text-align: center;
-				display: inline-block;
-			}
-			#profileD{
-				width: 300px;
-				margin-left: -8%;
-				text-align: center;
-				display: inline-block;
-			}	
-			#profileB{
-				width: 300px;
-				margin-left: -10%;
-				padding-right: 40px;
-				padding-left: 40px;
-				text-align: center;
-				display: inline-block;
-			}
-			#intro2{
-				width: 300px;
-				margin-left: -8%;
-				text-align: center;
-				display: inline-block;
-			}
-			.features{
-				width: 300px;
-				font-size: 90%;
-				display: inline-block;
-			}
-			.panel{
-				position: relative;
-				bottom: -79.5%;
-				right: 27%;
-
-			}
-			.tools{
-				width: 35px;
-				height: 35px;
-			}
-		}
-
-	#headText{
-		text-align: center;
-	}
-	.tools{
-		width: 40px;
-		height: 40px;
-	}
-/* Medium Devices, .visible-md-* */
-	@media (min-width: 1200px) and (max-width: 1399px) {
-		.tools{
-			width: 37px;
-			height: 38px;	
-		}
-	}
-
-/* Feature */
-
-	.features {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-wrap: wrap;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		-moz-justify-content: center;
-		-webkit-justify-content: center;
-		-ms-justify-content: center;
-		justify-content: center;
-
-	}
-
-	.feature {
-		width: 30%;
-		padding: 1em .5em 0em .5em;
-	}
-
-		@media screen and (max-width: 736px) {
-			.feature {
-				padding: 1em .5em 0.1em .5em;
-				width: 50%;
-			}
-		}
-
-	.feature {
-		border-color: #e3e3e3;
-	}
-
-	.feat{
-		text-decoration: underline;
-	}
-
-
-
-/* quote */
-
-	#quote {
-		padding: 2em 0 0.1em 0;
-		text-align: center;
-	}
-
-	.bold{
-		font-weight: bold;
-	}
-
-
-		@media (min-width: 736px) and (max-width: 1199px) {
-
-			#quote {
-				padding: 2em 2em 0em 2em;
-				font-size: 85%;
-			}
-
-		}
-
-		@media screen and (max-width: 735px) {
-
-			#quote {
-				padding: 2em 2em 0em 2em;
-				font-size: 80%;
-			}
-
-		}
-
-
-
-		.hobbies{
-			text-align: center;
-		}
-				@media screen and (max-width: 480px) {
-
-			.hobbies {
-				margin-top: 25%;
-				padding-top: 0%;
-				font-size: 75%;
-			}
-		}
-
-/* Footer */
-
-	#footer {
-		margin-top: 2.5em;
-		width: 100%;
-		text-align: center;
-	}
-
-		#footer a {
-			color: inherit;
-		}
-
-		#footer:before {
-			content: '';
-			display: inline-block;
-			background-color: #666666;
-		}
-
-		#footer .copyright {
-			font-size: 0.8em;
-		}
-
-
-/* smaller projects */
-	
-	#projects {
-		padding: 4em;
-		background-color: #ffffff;
-		border-radius: 4px;
-		height: auto !important;
-    	float: left;
-    	width: 100%;
-
-	}
-
-	.project {
-		padding-top: 25px;
-		float: left;
-		text-align: center;
-	}
-
-	.imgPro{
-		width: 200px;
-		height: 200px;
-		padding: 10px;
-	}
-
-	#projects > header:first-child {
-			text-align: center;
-		}
-
-/* Desktop View */
-	@media (min-width: 1691px) {
-		#projects {
-			height: auto;
-		}
-		.project{
-			padding-right: 50px;
-			padding-left: 50px;
-		}
-	}
-
-/* 1300px View */
-	@media (min-width: 1299px) and (max-width: 1690px) {
-		#projects {
-			height: auto;
-		}
-		.project{
-			padding-right: 20px;
-			padding-left: 20px;
-		}
-	}
-
-		@media (min-width: 671px) and (max-width: 1100px) {
-			#projects {
-				padding: 2em;
-				text-align: center;
-				height: auto;
-			}
-			.project{
-				width: 50%;
-				height: 65%;
-			}
-			
-			.imgPro{
-				width: 170px;
-				height: 170px;
-			}
-			#project2{
-				/* margin-top: -28%; */
-			}
-		}
-
-		@media screen and (max-width: 670px) {
-			#projects {
-				padding: 2em;
-				text-align: center;
-				position: center;
-				height: 900px;
-			}
-			.project{
-				width: 50%;
-				min-height: 391px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-			}
-			p.txtPro {
-				margin-bottom: 0;
-			}
-			.imgPro{
-				width: 130px;
-				height: 130px;
-			}
-			#project2{
-				/* margin-top: -60%; */
-			}
-			.pTitle{
-				font-size: 10px;
-				font-weight: bold;
-			}
-		}
-
-/* animated text effects */
-
-.animated-text{
-	font-size: 34px;
-	font-weight:600;
-	min-width:280px;
-}
-
-.animated-text span{ 
-	position: relative;
-}
-
-.animated-text span::before {
-	content: "Shopify Developer";
-	color: #80ED99;
-	animation: words 20s infinite;
-}
-
-.animated-text span::after {
-	content: "";
-	position: absolute;
-	width:calc(100% + 8px);
-	height:100%;
-	background-color:transparent;
-	border-left: 2px solid #80ED99;
-	right: -8px;
-	animation: cursor .8s infinite, typing 20s steps(14) infinite;
-}
-
-@keyframes cursor {
-	to {
-		border-left: 2px solid transparent;
-	}
-}
-
-@keyframes words {
-	0%,20%{
-		content: "Shopify Plus Developer.";
-	}
-	21%,40%{
-		content: "Project Manager.";
-	}
-	41%,60%{
-		content: "Ecommerce Merchandiser.";
-	}
-	61%,80%{
-		content: "Search Engine Optimizer.";
-	}
-	81%,100%{
-		content: "UX/UI Designer.";
-	}
-
-
-}
-
-@keyframes typing {
-	10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
-		width: 0;
-	}
-	5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
-		width: calc(100% + 8px);
-	}
-}
+<!DOCTYPE HTML>
+<html lang= "en">
+ <head>
+  <title>Terry Kim</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--CSS Cdn--></cdn-->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/effects.css">
+  <link rel="stylesheet" href="assets/css/mobile.css">
+<!--font cdn-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!--favicon -->
+  <link rel="icon" href="assets/images/favicon.png">
+ </head>
+ <body>
+<!-- Header -->
+  <header id="header" class="alt">
+    <div class="inner">
+      <h1 align="center" class="effect-shine">Terry Kim</h1>
+      <div class="animated-text">I'm a <span></span></div>
+      <ul class="actions">
+        <li><a href="https://www.linkedin.com/in/terryucsb/" target="_blank" id="button1" class="button big"><i class="fab fa-linkedin"></i> LINKEDIN</a></li>
+        <li><a href="https://github.com/terryjavascript" target="_blank" id="button1" class="button big"><i class="fab fa-github"></i> GITHUB</a></li>
+        <li><a href="assets/resume.pdf" download id="button1" class="button big"><i class="fa fa-coffee" aria-hidden="true"></i> RESUME</a></li>
+      </ul>
+    </div>
+  </header>
+
+<!-- Wrapper -->
+  <div id="wrapper">
+    <!-- Banner -->
+    <section id="intro" class="main">
+      <div id="intro1" class="intros">
+        <img src="assets/images/aboutme.jpg" width="260" height="260" id="profilePic">
+          <p id="profileD"><b style="font-size:120%;">Terry Kim</b><br>
+          Los Angeles, California<br>
+          terryucsb@gmail.com <br>
+          +1-213-999-7272</p>
+        <ul class="actions" id="profileB">
+          <li><a href="mailto:terryucsb@gmail.com" class="button big"><i class="far fa-envelope"></i> Let's Chat</a></li>
+        </ul>
+         <div class="width-100 overline flex-container">
+            <a href="#">
+              <img class="tools" src="assets/images/1.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/2.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/3.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/4.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/5.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/6.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/7.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/8.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/9.png">
+            </a>   
+            <a href="#">
+              <img class="tools" src="assets/images/11.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/12.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/13.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/14.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/15.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/16.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/17.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/18.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/19.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/20.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/21.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/22.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/23.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/24.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/25.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/26.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/27.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/28.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/29.png">
+            </a>
+            <a href="#">
+              <img class="tools" src="assets/images/30.png">
+            </a> 
+            <a href="#">
+              <img class="tools" src="assets/images/31.png">
+            </a> 
+            <a href="#">
+              <img class="tools" src="assets/images/32.png">
+            </a> 
+            <a href="#">
+              <img class="tools" src="assets/images/33.png">
+            </a>  
+            <a href="#">
+              <img class="tools" src="assets/images/34.png">
+            </a>                  
+            <a href="#">
+              <img class="tools" src="assets/images/35.png">
+            </a> 
+            <a href="#">
+              <img class="tools" src="assets/images/36.png">
+            </a> 
+            <a href="#">
+              <img class="tools" src="assets/images/37.png">
+            </a> 
+            <a href="#">
+              <img class="tools" src="assets/images/38.png">
+            </a> 
+            <a href="#">
+              <img class="tools" src="assets/images/39.png">
+            </a> 
+            <a href="#">
+              <img class="tools" src="assets/images/40.png">
+            </a> 
+            <a href="#">
+              <img class="tools" src="assets/images/41.png">
+            </a> 
+            <a href="#">
+              <img class="tools" src="assets/images/42.png">
+            </a>                      
+            <a href="#">
+              <img class="tools" src="assets/images/43.png">
+            </a> 
+            <a href="#">
+              <img class="tools" src="assets/images/44.png">
+            </a> 
+            <a href="#">
+              <img class="tools" src="assets/images/45.png">
+            </a> 
+            <a href="#">
+              <img class="tools" src="assets/images/46.png">
+            </a> 
+            <a href="#">
+              <img class="tools" src="assets/images/47.png">
+            </a> 
+            <a href="#">
+              <img class="tools" src="assets/images/48.png">
+            </a> 
+            <a href="#">
+              <img class="tools" src="assets/images/49.png">
+            </a> 
+            <a href="#">
+              <img class="tools" src="assets/images/50.png">
+            </a>             
+          </div>
+      </div>
+
+
+      <div id="intro2" class="intros">
+        <h1 id="headText">HI THERE</h1>
+          <p>As a Shopify Plus Guru with 8 years of experience, I’ve successfully developed DTC and B2B sites generating annual revenues from $2M to $20M. I’m known for my efficient turnaround times and the exceptional quality of my work. My primary focus is on delivering comprehensive e-commerce solutions, but I also bring extensive experience in SEO, digital marketing, API integrations, and major SaaS applications. I pride myself on being a balanced blend of introvert and extrovert, always prioritizing active listening before presenting my creative solutions. Let’s connect and explore how we can drive success together</p>
+          <div class="features">
+            <div class="feature" style="padding-right:25px;">
+              <h5 class="feat">Ecom Platforms</h5>
+              <p>Shopify<br>Squarespace<br>Wix<br>Magento<br>WooCommerce</div>
+            <div class="feature">
+              <h5 class="feat">CS Languages</h5>
+              <p>Liquid/Hydrogen<br>HTML<br>CSS<br>Javascript<br>PHP</p>
+            </div>
+            <div class="feature">
+              <h5 class="feat">Management Strengths</h5>
+              <p>ROAS/CVR/SERP<br>CMS/ERP/DAM<br>Merchandising<br>Paid Media/PMAX<br>Social Media</p>
+            </div>
+            <div class="feature">
+              <h5 class="feat">Development Strengths</h5>
+              <p>Customizations<br>Integrations<br>UX/UI Designs<br>SEO Optimization<br>A/B Testing<br>Mobile Queries<br>ADA/WCAG Compliance</p>
+            </div>
+            <div class="feature">
+              <h5 class="feat">Application Strengths</h5>
+              <p>Matrixfy<br>Mechanics<br>Conjured Memberships<br>Boost AI<br>BrightEdge<br>Klaviyo<br>Ablestar</p>
+            </div>
+            <div class="feature" style="padding-left:25px;">
+              <h5 class="feat">Ecom Channels</h5>
+               <p>Point of Sale<br>Shop App<br>Facebook & Instagram<br>Tiktok Shop<br>Youtube & Google<br>Ebay<br>Amazon FBA</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title"><br></h3>
+        </div>
+        <div class="panel-body">
+
+          
+        </div>
+      </div>
+    </section>
+
+<!-- Items -->
+    <section class="main items">
+
+      <article class="item">
+        <header>
+          <a href="https://abbyson.com/"><img src="assets/images/ss-abbyson.png" alt="" /></a>
+          <h3>Abbyson Living</h3>
+        </header>
+        <label>
+          <h5>FURNITURE BRAND</h5>
+        </label>
+        <p> At Abbyson.com, a leading furniture company with over $20 million in annual gross revenue, I serve as both the Manager and main Developer for Direct-to-Consumer (DTC) and Business-to-Business (B2B) initiatives. I spearheaded a comprehensive website overhaul that introduced new revenue-generating flows. A notable achievement under my leadership was the development of the AH Membership program, which contributed an additional $300,000 in annual revenue and doubled our Average Order Value (AOV). My role also involved executing key projects such as SEO optimization, UX/UI enhancements, performance speed improvements, AI-driven search and database solutions, application integrations, and theme migrations. </p>
+        <ul class="actions">
+          <li><a href="https://abbyson.com/" target="_blank" class="button">Website</a></li>
+          <li><a href="https://www.abbyson.com/pages/catalogs" target="_blank" class="button">Catalogs</a></li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <header>
+          <a href="https://www.thecremeshop.com/" target="_blank"><img src="assets/images/ss-creme.jpg" alt="" /></a>
+          <h3>The Créme Shop</h3>
+        </header>
+        <label>
+          <h5>COSMETIC BRAND</h5>
+        </label>
+        <p>At The Créme Shop, a prominent cosmetics brand with over $25 million in annual sales, I played a pivotal role in the company’s ecommerce success. Known for viral product launches and high-profile collaborations with influencers and brands such as Jeffree Star, Tiffany from SNSD, LipstickNick, Sanrio, BT21, and Sephora, I led the complete overhaul of their website. My efforts included redesigning layout visuals, enhancing content and functionality, and integrating advanced eCommerce applications like Google Analytics, SEO, quality shipment tracking, QuickBooks API, AWS/FBA, and REST APIs. These enhancements resulted in a fivefold increase in sales, an eightfold improvement in site speed, and a tenfold rise in unique visitors across multiple development phases. </p>
+        <ul class="actions">
+          <li><a href="https://www.thecremeshop.com/" target="_blank" class="button">Website</a></li>
+          <li><a href="https://www.instagram.com/thecremeshop/?hl=en" target="_blank" class="button">Instagram</a></li>
+        </ul> 
+      </article>
+
+      <article class="item">
+        <header>
+          <a href="https://mynanowell.com/" target="_blank"><img src="assets/images/ss-nanowell.jpg" alt="" /></a>
+          <h3>NANOWELL®</h3>
+        </header>
+        <label>
+          <h5>HEALTH SUPPLEMENTS</h5>
+        </label>
+        <p> Nanowell, a nutrition supplement company with $7 million in annual eCommerce revenue, dominates the Korean market with its patented ionized calcium and mineral products. Aiming to expand into international and U.S. markets, I led the complete redevelopment of their website to better target these audiences. I successfully migrated their original WooCommerce site to Shopify Plus, overcoming challenges related to integrating their proprietary ERP system. The project included implementing SEO, international payment gateways, precise language translations, global shipment update APIs, and an automated IP address converter, alongside creating engaging content. As a result of this comprehensive redevelopment, annual revenue surged by over 400%, and unique visitors increased by 1,200%. </p>
+        <ul class="actions">
+          <li><a href="https://nano-well.myshopify.com/" target="_blank" class="button">Website</a></li>
+          <li><a href="https://www.youtube.com/channel/UCtRWy3cUbUEeO6ZXALcle-g" target="_blank" class="button">Youtube</a></li>
+        </ul> 
+      </article>
+
+      <article class="item">
+        <header>
+          <a href="http://www.enc-inc.net/" target="_blank"><img src="assets/images/ss1.png" alt="" /></a>
+          <h3>ENC-Inc.</h3>
+        </header>
+        <label>
+          <h5>GLOBAL LOGISTICS</h5>
+        </label>
+        <p>ENC-Inc. is a global logistics and cargo company managing freight for major brands like Samsung, Hankook Tires, and Dacor. I collaborated on a project to modernize their decade-old website, transitioning from an initial Github prototype to a fully revamped site using jQuery and JavaScript. The redevelopment involved wireframing from scratch, utilizing Bootstrap and Node.js for design, and integrating hardcoded MSW with internal space for MySQL adaptability. Partnering with a fellow student from the UCLA bootcamp, we focused on creating a UX/UI-friendly, mobile-responsive site tailored for business presentations. The most challenging part was that they were not on any ecommerce/website hosted platforms, so it was hardcoded. </p>
+        <ul class="actions">
+          <li><a href="http://www.enc-inc.net/" target="_blank" class="button">Website</a></li>
+          <li><a href="https://github.com/terryjavascript/encweb" target="_blank" class="button">Github</a></li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <header>
+          <a href="https://hyuneebees.com/" target="_blank" ><img src="assets/images/ss-hyunee.jpg" alt="" /></a>
+          <h3>hyunee Eats</h3>
+        </header>
+        <label>
+          <h5>MERCH STORE & SHOWCASE</h5>
+        </label>
+        <p> HyuneeEats, a prominent Asian-American YouTube influencer with over 300 million views and 1.8 million subscribers, has collaborated with major global brands including Amazon, Popeyes, H Mart, and the LA Dodgers. I developed a custom Shopify website for her, utilizing Liquid & Hydrogen, JavaScript, and jQuery to implement static encryption for enhanced user experience and seamless content updates. The site integrates multiple REST APIs for efficient content management and features custom backend eCommerce functions along with third-party applications for merchandising and sales analytics.</p>
+        <ul class="actions">
+          <li><a href="https://hyuneebees.com/" target="_blank" class="button">Website</a></li>
+          <li><a href="https://www.youtube.com/channel/UCkS6mJ0i2oMdHEdR-Jpw9Ug" target="_blank" class="button">Youtube</a></li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <header>
+          <a href="http://dashofmedia.com/"><img src="assets/images/ss-orange.jpeg" alt="" /></a>
+          <h3>DASH OF MEDIA</h3>
+        </header>
+        <label>
+          <h5>INFLUENCER AGENCY </h5>
+        </label>
+        <p>Dash of Media is a fully integrated business solutions consultancy that provides expertise for digital marketing, influencer marketing, content creation, and experiential activations. This company is founded by Tinger Hseih, an influencer herself with 150k IG Followers. She is sponsored by many well-known travel and food companies such as Qatar Airlines, Arizona Tourism, LA Football Club, and many more. This project was developed scratch from wireframe - color and aesthetic theme, functionalities, Slider Revolution, and Javascript embedded for overall smooth transition flow. </p>
+        <ul class="actions">
+          <li><a href="http://dashofmedia.com/" target="_blank" class="button">Website</a></li>
+          <li><a href="https://www.instagram.com/dashofting/?hl=en" target="_blank" class="button">Instagram</a></li>
+        </ul>
+      </article>
+
+    </section>
+
+<!--smaller projects-->
+    <section id="projects" class="main">
+      <header>
+        <h2>Other Notable Projects</h2>
+      </header>
+
+      <div class="project">
+        <img src="assets/images/ss-kyodong.png" class="imgPro">
+        <h4 class="pTitle">Kyodong<br>Noodles</h4>
+        <p class="txtPro">Shopify Plus<br>Instagram<br>Doordash</p>
+      </div>
+
+      <div class="project">
+        <img src="assets/images/ss-choice.png" class="imgPro"></a>
+        <h4 class="pTitle">Choice KBBQ<br> Meat Market</h4>
+        <p class="txtPro">Shopify<br>ADA Compliance<br>Yelp Ads</p>
+      </div>
+
+      <div class="project">
+        <img src="assets/images/ss-nba.png" class="imgPro"></a>
+        <h4 class="pTitle">toast AIO <br>Agency</h4>
+        <p class="txtPro">Wordpress <br>SEO Optimization <br>Tiktok</p>
+      </div>
+
+      <div class="project">
+        <img src="assets/images/ss-tiato.png" class="imgPro"></a>
+        <h4 class="pTitle">tiato Kitchen<br>& Garden</h4>
+        <p class="txtPro">Shopify<br>ERP<br>Yelp Ads</p>
+      </div>
+
+      <div class="project">
+        <img src="assets/images/ss-plane.jpg" class="imgPro"></a>
+        <h4 class="pTitle">Dream<br>Society NFT</h4>
+        <p class="txtPro">Shopify <br> Ethereum<br> Smart Contract</p>>
+      </div>
+
+      <div class="project">
+        <img src="assets/images/ss-plane.jpg" class="imgPro"></a>
+        <h4 class="pTitle">Based Neko <br> NFT</h4>
+        <p class="txtPro"> Wordpress<br> Blast L2<br> Smart Contract</p>>
+      </div>
+
+      <div class="project">
+        <img src="assets/images/ss-awff.png" class="imgPro"></a>
+        <h4 class="pTitle">Asian World<br> Film Fest</h4>
+        <p class="txtPro">Squarespace<br>Bootstrap<br>Paid Media</p>
+      </div>
+
+      <div class="project">
+        <img src="assets/images/ss-ohmycrab.png" class="imgPro"></a>
+        <h4 class="pTitle">Oh My Crab<br> Seafood </h4>
+        <p class="txtPro">Wix<br>Instagram<br>Yelp Ads</p>
+      </div>
+
+      <div class="project">
+        <img src="assets/images/ss-ginkgo.png" class="imgPro"></a>
+        <h4 class="pTitle">Ginkgo<br> Katsu</h4>
+        <p class="txtPro">Wix<br>Yelp Ads<br>YouTube</p>
+      </div>
+
+      <div class="project">
+        <img src="assets/images/ss-awff.png" class="imgPro"></a>
+        <h4 class="pTitle">Victo Ngai<br> Portfolio</h4>
+        <p class="txtPro">Shopify Plus<br>Publuu<br>SEO Optimization</p>
+      </div>
+
+      <div class="project">
+        <img src="assets/images/ss-ohmycrab.png" class="imgPro"></a>
+        <h4 class="pTitle">Mr.Hanger<br> Global </h4>
+        <p class="txtPro">Shopify<br>Paid Media<br>Amazon</p>
+      </div>
+      <div class="project">
+        <img src="assets/images/ss-tiato.png" class="imgPro"></a>
+        <h4 class="pTitle">Basil+Lola<br> Fashion</h4>
+        <p class="txtPro">Shopify<br>Migration<br>SEO Optimization</p>
+      </div>
+
+      <div style="clear: both;"></div>
+    </section>
+
+<!--quote
+    <section id="quote" class="main special">
+      <h5> My experiences as a full stack web developer not only consists of the UX and UI designs of different softwares, but truly understanding individual business analysis. Through many obstacles and achievements, I've learned the trends, customer's focus, marketing and business conversions, third party accessibilities, and wide knowledge on tech industry. My passion for technology grew even stronger in 2022 as I explored into the Web3/Metaverse/NFT environment. </h5><br><br>
+      <ul class="actions">
+        <li><a href="mailto:terryucsb@gmail.com" class="button big"><i class="far fa-envelope"></i> Email</a></li>
+        <li><a href="assets/resume.pdf" download class="button big"><i class="fa fa-coffee" aria-hidden="true"></i> Resume</a></li>
+        <li><a href="https://www.instagram.com/kimchisquid/" target="_blank" class="button big"><i class="fab fa-instagram"></i> Instagram</a></li>
+      </ul>
+    </section>
+
+  -->
+
+<!-- Footer -->
+    <footer id="footer"><p class="copyright">&copy; Terry Kim 2024</p>
+      
+    </footer>
+  </div>
+
+<!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
