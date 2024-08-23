@@ -1814,19 +1814,19 @@
 
 @keyframes words {
 	0%,20%{
-		content: "Shopify Plus Developer";
+		content: "Shopify Plus Developer.";
 	}
 	21%,40%{
-		content: "Project Manager";
+		content: "Project Manager.";
 	}
 	41%,60%{
-		content: "Ecommerce Merchandiser";
+		content: "Ecommerce Merchandiser.";
 	}
-	60%,81%{
-		content: "Search Engine Optimizer";
+	61%,80%{
+		content: "Search Engine Optimizer.";
 	}
 	81%,100%{
-		content: "UX/UI Designer";
+		content: "UX/UI Designer.";
 	}
 
 
