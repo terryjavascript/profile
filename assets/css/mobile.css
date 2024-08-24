@@ -82,11 +82,17 @@
     max-width: 300px;
     margin: 0 auto;
 }
+.animated-text span::after {
+        height:25%;
+}
 
 }
 
 
 /* Mobile Phone */
 @media only screen and (max-width: 430px) {
+.animated-text span::after {
+        height:25%;
+    }
 
 }
