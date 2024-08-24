@@ -83,7 +83,7 @@
     margin: 0 auto;
 }
 .animated-text span::after {
-        height:25%;
+        height:50%;
 }
 
 }
@@ -92,7 +92,10 @@
 /* Mobile Phone */
 @media only screen and (max-width: 430px) {
 .animated-text span::after {
-        height:25%;
+        height:50%;
+    }
+    .project{
+        padding-top:0px;
     }
 
 }
