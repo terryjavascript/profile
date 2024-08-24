@@ -1484,7 +1484,7 @@
 /* Desktop View */
 	@media (min-width: 1691px) {
 		#intro {
-			height: 1500px;
+			height: auto;
 		}
 	}
 
